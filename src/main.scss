@@ -1,0 +1,26 @@
+@import "./assets/sass/partials/colors";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    background-color: $primary_color;
+    color: $secondary_color;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.dark__mode{
+        background-color: $secondary_color;
+        color: $primary_color;
+    }
+}

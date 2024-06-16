@@ -1,0 +1,95 @@
+@import "../../assets/sass/partials/colors";
+.nav {
+  list-style: none;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    li {
+      font-size: 1.2rem;
+
+      em {
+        font-size: 1rem;
+        color: $accent_color;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.hireme {
+  border: 1px solid $accent_color;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: $accent_color;
+  color: $primary_color;
+
+  &:hover {
+    background-color: $primary_color;
+    color: $accent_color;
+  }
+}
+
+.switch {
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__trigger {
+  color: $accent_color;
+  font-size: 2rem;
+}
+
+.mobile__nav{
+  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 100%;
+  width: 100%;
+  height: calc(100vh - 80px);
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  transition: all .3s ease;
+
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    li {
+      font-size: 1.2rem;
+
+      em {
+        font-size: 1rem;
+        color: $accent_color;
+        margin-right: 5px;
+      }
+    }
+  }
+  }
+
+
+
+
+@media screen and (max-width: 999px) {
+  .nav__item {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+  }
+}
